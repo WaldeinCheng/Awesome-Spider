@@ -11,3 +11,9 @@
 - 
 
 ## 操作系统
+
+
+## Python学习笔记
+## 基础篇
+- **[EP01_计算机基础知识](/python-basic/📘EP01_计算机基础知识.md)
+- **[EP02_Python入门及配置](/python-basic/📘EP02_Python入门及配置.md)
