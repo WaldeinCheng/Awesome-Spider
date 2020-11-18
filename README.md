@@ -15,5 +15,5 @@
 
 ## Python学习笔记
 ### 基础篇
-- **[EP01_计算机基础知识](/python-basic/📘EP01_计算机基础知识.md)**
-- **[EP02_Python入门及配置](/python-basic/📘EP02_Python入门及配置.md)**
+- **[1.1计算机基础知识](/python-basic/1.1计算机基础知识.md)**
+- **[1.2Python入门及配置](/python-basic/1.2Python入门及配置.md)**
