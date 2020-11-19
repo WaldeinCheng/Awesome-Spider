@@ -16,3 +16,6 @@
 - [1.1 计算机基础知识](/python-basic/1.1计算机基础知识.md)
 - [1.2 Python入门及配置](/python-basic/1.2Python入门及配置.md)
 
+### Centos
+
+- [01 Centos下安装Mysql](/centos-tutorial/Centos下安装Mysql.md)
