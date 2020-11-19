@@ -18,4 +18,5 @@
 
 ### Centos
 
-- [01 Centos下安装Mysql](/centos-tutorial/Centos下安装Mysql.md)
+- [Centos下安装Mysql](/centos-tutorial/Centos下安装Mysql.md)
+- [Centos下安装Git](/centos-tutorial/Centos下安装Git.md)
