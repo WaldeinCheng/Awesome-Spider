@@ -21,6 +21,7 @@
 - [1.4 分支结构if和else](/python-basic/1.4分支结构if和else.md)
 - [1.5 循环结构for和while](/python-basic/1.5循环结构for和while.md)
 - [1.6 数据结构之字符串](/python-basic/1.6数据类型之字符串.md)
+- [1.7 数据结构之列表](/python-basic/1.7数据结构之列表.md)
 
 ### Centos
 
