@@ -4,7 +4,7 @@
 
 **假设a=10,b=20**
 
-![](assets/Python算术运算符.png)
+![](/assets/Python算术运算符.png)
 
 ### 关系运算符
 
