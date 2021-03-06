@@ -4,7 +4,7 @@
 
 **假设a=10,b=20**
 
-![](/assets/Python算术运算符.png)
+![](./assets/Python算术运算符.png)
 
 ### 关系运算符
 
@@ -12,13 +12,13 @@
 
 **假设a=10,b=20**
 
-![](/assets/Python关系运算符.png)
+![](./assets/Python关系运算符.png)
 
 ### 赋值运算符
 
 **假设a=10,b=20**
 
-![](/assets/Python赋值运算符.png)
+![](./assets/Python赋值运算符.png)
 
 ### 位运算符
 
@@ -33,18 +33,18 @@ b = 0000 1101
 
 运算规则如下：
 
-![](/assets/Python位运算符.png)
+![](./assets/Python位运算符.png)
 
 ### 逻辑运算符
 
 **假设a=10,b=20**
 
-![](/assets/Python逻辑运算符.png)
+![](./assets/Python逻辑运算符.png)
 
 ### 身份运算符和成员运算符
 
 此外还有**身份运算符**和**成员运算符**,具体表述如下图：
 
-![](/assets/Python身份运算符.png)
+![](./assets/Python身份运算符.png)
 
-![](/assets/Python成员运算符.png)
+![](./assets/Python成员运算符.png)
