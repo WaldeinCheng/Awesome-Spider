@@ -1,6 +1,7 @@
 <div align="center">
     <img src="/assets/img/logo.png" width="100px">
 </div>
+
 <br>
 
 非专业Python方向，放置自己的笔记
@@ -23,7 +24,8 @@
 - [1.6 数据结构之字符串](/python-basic/1.6数据类型之字符串.md)
 - [1.7 数据结构之列表](/python-basic/1.7数据结构之列表.md)
 - [1.8 数据结构之元组、集合和字典](/python-basic/1.8数据结构之元组、集合和字典.md)
-- [1.9 公共操作及推导式.md](/python-basic/1.9公共操作及推导式.md)
+- [1.9 公共操作及推导式](/python-basic/1.9公共操作及推导式.md)
+- [[补充篇] Python运算符简介](/python-basic/[补充]Python运算符.md)
 
 ### Centos
 
