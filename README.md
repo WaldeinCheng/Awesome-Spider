@@ -27,6 +27,10 @@
 - [1.9 公共操作及推导式](/python-basic/1.9公共操作及推导式.md)
 - [[补充篇] Python运算符简介](/python-basic/[补充]Python运算符.md)
 
+#### 进阶篇
+
+- [2.1 函数的概念和使用](/python-basic/2.1函数概念及使用.md)
+
 ### Centos
 
 - [Centos下安装Mysql](/centos-tutorial/Centos下安装Mysql.md)
