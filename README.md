@@ -36,3 +36,5 @@
 - [Centos下安装Mysql](/centos-tutorial/Centos下安装Mysql.md)
 - [Centos下安装Git](/centos-tutorial/Centos下安装Git.md)
 - [从零开始搭建git服务器](/centos-tutorial/从零开始搭建git服务器.md)
+- [Linux基础](/centos-tutorial/Linux基础.md)
+
