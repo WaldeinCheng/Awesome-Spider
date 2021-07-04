@@ -31,6 +31,11 @@
 
 - [2.1 函数的概念和使用](/python-basic/2.1函数概念及使用.md)
 
+#### 爬虫篇
+
+- [爬虫基础知识](/python-spider/Python爬虫基础.md)
+- [scrapy基础](/python-spider/Scrapy基础.md)
+
 ### Centos
 
 - [Centos下安装Mysql](/centos-tutorial/Centos下安装Mysql.md)
