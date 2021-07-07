@@ -2,6 +2,12 @@
 
 ---
 
+目录
+
+[TOC]
+
+
+
 ### 1.*args 和 **kwargs
 
 后面的参数并不重要，重要的是一`*`和两个`**`的区别和作用，主要用于函数不定参数的定义。***args**是用来发送一个非键值对的可变数量的参数列表给一个函数。
@@ -70,4 +76,22 @@ debugger模式下的常用命令：
 
 单步跳过（next）和单步进⼊（step）的区别在于， 单步进⼊会进⼊当前⾏调⽤的函数内 部并停在⾥⾯， ⽽单步跳过会（⼏乎）全速执⾏完当前⾏调⽤的函数，并停在当前函数的 下⼀⾏。
 
-### 3.
+### 3.read,readline和readlines
+
+* read        读取整个文件
+* readline    读取下一行,使用生成器方法
+* readlines   读取整个文件到一个迭代器以供我们遍
+
+### 4.自省机制
+
+自省就是面向对象的语言所写的程序在运行时,所能知道对象的类型.简单一句就是运行时能够获得对象的类型.比如type(),dir(),getattr(),hasattr(),isinstance().
+
+```python
+a = [1,2,3]
+b = {'a':1,'b':2,'c':3}
+c = True
+print type(a),type(b),type(c) # <type 'list'> <type 'dict'> <type 'bool'>
+print isinstance(a,list)  # True
+```
+
+### 5.
