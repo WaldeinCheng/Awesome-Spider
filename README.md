@@ -50,6 +50,7 @@
 
 - [爬虫基础知识](/python-spider/Python爬虫基础.md)
 - [scrapy基础](/python-spider/Scrapy基础.md)
+- [Selenium基础](/python-spider/Selenium基础.md)
 
 ### Centos
 

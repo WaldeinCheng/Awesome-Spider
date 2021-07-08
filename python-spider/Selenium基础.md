@@ -117,3 +117,140 @@ driver.find_element_by_partial_link_text('hao').click()
 
 ### selenium其他使用方法
 
+#### 标签的切换
+
+标签也就是浏览器所打开的标签，使用selenium控制浏览器标签的切换
+
+```python
+from selenium import webdriver
+
+url = 'https://hf.58.com/'
+driver = webdriver.Chrome()
+
+driver.get(url)
+
+temp = driver.find_element_by_xpath('/html/body/div[3]/div[1]/div[1]/div/div[1]/div[1]/span[2]/a')
+temp.click()
+
+print(driver.current_url)
+print(driver.window_handles) # 列出当前所有的标签句柄
+
+driver.switch_to.window(driver.window_handles[-1]) # 切换标签的语法
+
+print(driver.current_url)
+print(driver.window_handles)
+```
+
+#### 窗口切换
+
+一般应用在注册登录，验证码领域，大多数的登录和验证码模块都是一个内嵌的Frame框架，需要切换到Frame里才能进行下一步操作
+
+```python
+"""
+selenium框架的窗口切换
+"""
+from selenium import webdriver
+
+url = 'https://qzone.qq.com/'
+driver = webdriver.Chrome()
+driver.get(url)
+
+# 切换到登录的frame里,这里的参数是frame的id
+# 如果没有id，可以使用xpath先定位到frame然后再切换
+# temp = driver.find_element_by_xpath('//*[@id="login_frame"]')
+# driver.switch_to.frame(temp)
+driver.switch_to.frame('login_frame')
+
+driver.find_element_by_id('switcher_plogin').click()
+driver.find_element_by_id('u').send_keys('usercode')
+driver.find_element_by_id('p').send_keys('password')
+driver.find_element_by_id('login_button').click()
+```
+
+#### 获取cookie
+
+一般用于爬虫需要登录的场景，但是登录模块很难实现，就用selenium框架先模拟登陆获取cookies
+
+```python
+"""
+获取cookies
+"""
+from selenium import webdriver
+
+url = 'https://www.baidu.com'
+driver = webdriver.Chrome()
+driver.get(url)
+
+print(type(driver.get_cookies()))
+# cookies列表转成cookies字典
+cookies = {data['name']:data['value'] for data in driver.get_cookies()}
+print(cookies)
+```
+
+#### 启动无界面模式
+
+主要用于没有界面显示，服务器端
+
+### 斗鱼主播
+
+```python
+"""
+使用selenium框架爬取斗鱼主播信息
+"""
+from selenium import webdriver
+import time
+
+
+class Douyu(object):
+    def __init__(self):
+        self.url = 'https://www.douyu.com/directory/all'
+        self.driver = webdriver.Chrome()
+
+    def parse_data(self):
+        time.sleep(5)
+        room_list = self.driver.find_elements_by_xpath(
+            '//*[@id="listAll"]/section[2]/div[2]/ul/li/div')
+        # print(len(room_list))
+        data = []
+        # 遍历每一个房间
+        for room in room_list:
+            temp = {}
+            temp['title'] = room.find_element_by_xpath(
+                './a/div[2]/div[1]/h3').text
+            temp['type'] = room.find_element_by_xpath(
+                './a/div[2]/div[1]/span').text
+            temp['owner'] = room.find_element_by_xpath(
+                './a/div[2]/div[2]/h2/div').text
+            temp['num'] = room.find_element_by_xpath(
+                './a/div[2]/div[2]/span').text
+            data.append(temp)
+        return data
+
+    def save_data(self, data):
+        for d in data:
+            print(d)
+
+    def run(self):
+        # url
+        # driver
+        # get
+        self.driver.get(self.url)
+        # parse
+        while True:
+            data_list = self.parse_data()
+            # save
+            self.save_data(data_list)
+            # next_url
+            try:
+                el_next = self.driver.find_element_by_xpath('//*[@class=" dy-Pagination-next"]')
+                self.driver.execute_script('scrollTo(0,10000000)')
+                el_next.click()
+            except:
+                break
+
+
+if __name__ == '__main__':
+    douyu = Douyu()
+    douyu.run()
+```
+
