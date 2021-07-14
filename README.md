@@ -26,6 +26,8 @@
 - **[常见HTTP状态码汇总](/web-rel/http-status-code.md)**
 - **[解决1080端口被占用](/web-rel/solve-1080-port-occupied.md)**
 - [局域网内通过IP地址共享文件](/web-rel/throwing-IPaddress-shared-files-in-LAN.md)
+- [HTTP和HTTPS](/web-rel/http-and-https.md)
+- [cookie和session的区别](/web-rel/cookies-and-session.md)
 
 ### Python学习笔记
 
