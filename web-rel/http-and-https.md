@@ -41,7 +41,7 @@ HTTPS和HTTP的区别主要如下：
 
 6. Web服务器利用会话密钥加密与客户端之间的通信。
 
- ![img](\assets\HTTPS工作原理.gif)
+ ![img](assets/HTTPS工作原理.gif)
 
 ### 4.HTTPS的优缺点
 
